@@ -1,0 +1,23 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "EnJoY Gamee!!",
+        "name": "HUD UI",
+        "uuid": "86d150f2-e2bb-4ea0-9cde-3254268436d6",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            13,
+            0]},
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "01e643da-494e-4715-956e-284f98bb314a",
+            "version": [
+                0,
+                0,
+                1]}]}

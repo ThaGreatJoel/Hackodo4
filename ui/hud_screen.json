@@ -1,0 +1,60 @@
+{
+
+
+
+// BLA BLA BLA @thagreatjoel
+
+
+    "hud_content": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_front",
+                "value": [
+                    // F1 Button: Toggles the GUI visibility
+                    {
+                        "f1_button": {
+                            "prevent_touch_input": true,
+                            "anchor_from": "top_middle",
+                            "anchor_to": "top_middle",
+                            "offset": [38, 0],
+                            "size": [20, 20],
+                            "$border_visible": false,
+                            "$pressed_button_name": "button.hide_gui_all",
+                            "$default_button_texture|default": "textures/ui/button",
+                            "$hover_button_texture|default": "textures/ui/button",
+                            "$pressed_button_texture|default": "textures/ui/button",
+                            "$locked_button_texture|default": "textures/ui/button",
+                            "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                            "$button_text": "F1"
+                        }
+                    },
+                    // F8 Button: Toggles the HUD paperdoll visibility
+                    {
+                        "f8_button": {
+                            "prevent_touch_input": true,
+                            "anchor_from": "top_middle",
+                            "anchor_to": "top_middle",
+                            "offset": [-38, 0],
+                            "size": [20, 20],
+                            "$border_visible": false,
+                            "$pressed_button_name": "button.hide_paperdoll_hud",
+                            "$default_button_texture|default": "textures/ui/button",
+                            "$hover_button_texture|default": "textures/ui/button",
+                            "$pressed_button_texture|default": "textures/ui/button",
+                            "$locked_button_texture|default": "textures/ui/button",
+                            "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                            "bindings": [
+                                {
+                                    "binding_name": "#hud_visible",
+                                    "binding_name_override": "#visible",
+                                    "binding_type": "global"
+                                }
+                            ],
+                            "$button_text": "F8"
+                        }
+                    }
+            }
+        ]
+    }
+}
